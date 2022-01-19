@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --font-abz: "ABeeZee", sans-serif;
+  --font-sans: "Open Sans", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-volkhov: "Volkhov", serif;
+}
+.font-abz {
+  font-family: var(--font-abz);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+.font-volkhov {
+  font-family: var(--font-volkhov);
+}
+.service__box {
+  transition: all 0.5s linear;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: relative;
+  background-color: #fff;
+  cursor: pointer;
+}
+.service__box::after {
+  transition: all 0.5s linear;
+  display: none;
+  content: "";
+  background-color: #df6951;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 86%;
+  left: -9%;
+  z-index: -3;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 5px;
+}
+.service__box:hover {
+  transition: all 0.5s linear;
+  box-shadow: 0px 17px 27px -5px rgb(0 0 0 / 34%);
+}
+.service__box:hover.service__box::after {
+  transition: all 0.5s linear;
+  display: block;
+}
