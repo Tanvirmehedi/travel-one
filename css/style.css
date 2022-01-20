@@ -49,3 +49,42 @@
   transition: all 0.5s linear;
   display: block;
 }
+.destinations__box span {
+  font-size: 15px;
+}
+
+.destinations_row {
+  background-image: url("../resources/sprin.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0%;
+  bottom: -0%;
+  left: -78%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  list-style: none;
+}
+.carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.carousel-control-prev {
+  top: -20%;
+  left: 85%;
+  transform: rotate(89deg);
+}
+.carousel-control-next {
+  bottom: -50%;
+  right: 0;
+  transform: rotate(89deg);
+}
