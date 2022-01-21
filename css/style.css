@@ -88,3 +88,54 @@
   right: 0;
   transform: rotate(89deg);
 }
+
+/* // `xs` returns only a ruleset and no media query
+// ... { ... } */
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #hero_part {
+    text-align: center;
+  }
+  .hero__img {
+    margin-top: 2rem;
+  }
+  .hero__img > img {
+    transform: translate(-12%, 0);
+  }
+  .hero__h5 {
+    margin-top: 0 !important;
+  }
+  .hero__pra {
+    padding: 0 !important;
+  }
+  .back-bd.position-absolute {
+    top: 8%;
+  }
+
+  .selling__left_col {
+    padding-left: 10%;
+  }
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .hero__img > img {
+    height: 50% !important;
+  }
+  .easy_and_first {
+    width: 100% !important;
+  }
+}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
